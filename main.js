@@ -13,9 +13,13 @@ for(let i=0;i <botoes.length;i++){
    console.log();
   };
 
-const contadores =document.querySelectorAll ("contador");
-const tempoObjetivo1 = new Date("")
-const tempoObjetivo2 = new Date("")
-const tempoObjetivo3 = new Date("")
-const tempoObjetivo4 = new Date("")
-
+const contadores = document.querySelectorAll (".contador");
+let tempoAtual = new Date();
+const tempoObjetivo1 = new Date("2025-12-15T00:00:00") - tempoAtual;
+contadores[0].textContent = tempoObjetivo1;
+const tempoObjetivo2 = new Date("2026-06-20T00:00:00") - tempoAtual;
+contadores[1].textContent = tempoObjetivo2;
+const tempoObjetivo3 = new Date("2026-10-12T00:00:00") - tempoAtual;
+contadores[2].textContent = tempoObjetivo3;
+const tempoObjetivo4 = new Date("2027-09-26T00:00:00") - tempoAtual;
+contadores[3].textContent = tempoObjetivo4;
